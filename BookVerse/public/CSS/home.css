@@ -1,0 +1,130 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://img.freepik.com/premium-photo/beautiful-ancient-library-with-many-books-concept-background-generative-ai_159242-28535.jpg");
+        /* url("https://www.eluniversity.co.za/wp-content/uploads/2021/11/GettyImages-577674005-1536x864.jpg"); */
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  }
+  .cover-container {
+    max-width: 60vw;
+  }
+  
+  .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .nav-link.active {
+    color: white;
+    border-bottom-color: white;
+  }
+  
+  .btn-secondary,
+  .btn-secondary:hover {
+    color: #333;
+    text-shadow: none;
+}
+/* Zoom-in effect on hover for chatbot button */
+.chatbot-button:hover {
+  transform: scale(1.2); /* Increase size by 20% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Zoom-in effect on hover for all buttons */
+button:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+  /* Chatbot Styles */
+  .chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .chatbot-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
+  /* Zoom-in effect on hover for chatbot button */
+  .chatbot-button:hover {
+    transform: scale(1.2); /* Increase size by 20% */
+  }
+
+  .chatbot-window {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .chatbot-header {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .chatbot-messages {
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+  }
+
+  .chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+
+  .chatbot-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+  }
+
+  .chatbot-input button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
+  /* Zoom-in effect on hover for all buttons */
+  button:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+  }
